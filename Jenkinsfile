@@ -26,5 +26,15 @@ pipeline{
                 sh 'npm install'
             }
         }
+
+         stage('Docker Build'){
+            steps{
+                sh """
+                docker build -t annollatulasi/backend:${appVersion}
+                docker images
+                """
+
+            }
+        }
     }
 }
