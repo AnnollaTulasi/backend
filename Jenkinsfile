@@ -19,12 +19,4 @@ pipeline{
             }
         }
     }
-    stages{
-        stage('Deploy'){
-            
-        }
-    }
-    always{
-
-    }
 }
